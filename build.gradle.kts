@@ -57,5 +57,5 @@ tasks.test {
 
 tasks.asciidoctor {
     inputs.dir(snippetsDir)
-    dependsOn(tasks.test)
+    tasks.dependsOn(tasks.test)
 }
